@@ -25,7 +25,7 @@ RUN apt-get update && \
     wget -nc https://dl.winehq.org/wine-builds/winehq.key && \
     apt-key add winehq.key && \
     apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ && \
-    apt-get update && apt-get -y install xvfb x11vnc xdotool wget tar supervisor winehq-devel net-tools fluxbox cabextract && \
+    apt-get update && apt-get -y install xvfb x11vnc xdotool wget tar supervisor winehq-stable net-tools fluxbox cabextract && \
     wget -O - https://github.com/novnc/noVNC/archive/v1.2.0.tar.gz | tar -xzv -C $HOME && mv $HOME/noVNC-1.2.0 $HOME/novnc && \
     wget -O - https://github.com/novnc/websockify/archive/v0.9.0.tar.gz | tar -xzv -C $HOME && mv $HOME/websockify-0.9.0 $HOME/novnc/utils/websockify && \
     wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks -O /usr/bin/winetricks && \
